@@ -1,0 +1,5 @@
+num=int(input('Enter an integer:'))
+print(f'{num} is odd' if num%2 else f'{num} is even')
+list1=input('Enter a comma seperated list:').split(',')
+item=input('Enter an item:')
+print('Available' if item in list1 else 'Not Available')
