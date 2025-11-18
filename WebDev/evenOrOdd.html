@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Even Or Odd</title>
+        <style>
+            .div {
+                padding: 20px;
+                border-radius:10px;
+                text-align: center;
+                border: 1px solid mediumpurple;
+                background-color: #f9f9f9;
+                width: fit-content;
+            }
+            #result{
+                display:none;
+            }
+            button{
+                border-radius:5px;
+                text-align: center;
+                border: 1px solid white;
+                background-color: #c5a1f5;
+            }
+        </style>
+        
+    </head>
+    <body>
+       <center>
+         <div class="div">
+            <form name="F1">
+            Enter a Number:<input type="text" name="Num">
+            <br><br>
+            <button type="button" onclick="EvenOdd()" name="B1">Submit</button>
+            </form>
+         </div>
+         <br><br>
+         <div class="div" id="result">
+         </div>
+       </center>
+       <script>
+        function EvenOdd(){
+            var n=parseInt(document.forms.F1.Num.value);
+            resut=document.getElementById("result");
+            result.style.display = "block"; 
+            if(isNaN(n)){
+                document.getElementById("result").innerHTML="Please enter a valid number"
+            }else if(!(n%2)){
+                document.getElementById("result").innerHTML=n+" is an even number."
+            }else{
+                document.getElementById("result").innerHTML=n+" is an odd number."
+            }
+        }
+       </script>
+    </body>
+</html>

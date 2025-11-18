@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>Cooking and Cleaning</title>
+    <style>
+        .button {
+            padding: 10px 20px;
+            background-color: #4da7db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function kitchentask() {
+            document.getElementById('cook').innerHTML = "Cooking started...\n";
+            setTimeout(() => {
+                document.getElementById('cook').innerHTML = "Cooking finished!\n";
+            }, 3000);
+
+            document.getElementById('clean1').innerHTML = "Kitchen cleaning started...\n";
+            document.getElementById('clean2').innerHTML = "Kitchen cleaning finished!\n";
+        }
+    </script>
+    <center>
+    <button class="button" onclick="kitchentask()">Click Here</button>
+
+    <div id="cook">
+
+    </div>
+    <p id="clean1">
+    </p>
+    <p id="clean2">
+    </p>
+    </center>
+</body>
+
+</html>

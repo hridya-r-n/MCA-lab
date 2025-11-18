@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title>
+    <style>
+        body{
+            align-items: center;
+            margin: 20px;
+        }
+        div{
+            border:1px solid grey;
+            background-color:aliceblue;
+            padding:50px;
+            max-width:700px;
+            height:fit-content;
+            float:center;
+            margin:auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+        <div style="border:none;">
+            <h1 style="text-align: center;">Registration Form</h1>
+        </div>
+        <form name="myform">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name"><br></td>
+                </tr>
+                <tr>
+                    <td>Mobile No.:</td>
+                    <td><input type="text" name="mob" maxlength="10" ><br></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email"><br></td>
+                </tr>
+                
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="female" >
+                        <label name="female">Female</label><br>
+                        <input type="radio" name="gender" value="male">
+                        <label name="male">Male</label>
+                        <br>
+                        <input type="radio" name="gender" value="others">
+                        <label name="others">Others</label>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="submit" onclick=validate() value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function validate(){
+            var name=document.myform.name.value;
+            var mob=document.myform.mob.value;
+            var email=document.myform.email.value;
+            var atpos=email.indexOf("@");
+            var dotpos=email.lastIndexOf(".");
+            if(name==''){
+                alert("Please enter your full name");
+                document.myform.name.focus();
+                return false;
+            }
+
+            if(mob==''){
+                alert("Please enter your mobile number");
+                document.myform.mob.focus();
+               return false;
+            }else if(isNaN(mob)){
+                alert("Please enter a valid mobile number")
+            }
+           
+            if(email=='' ){
+                alert("Please enter your email id");
+                document.myform.email.focus();
+                return false;
+            }else if((atpos<1)||(dotpos-atpos<2)){
+                alert("Please provide your valid email address");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+<head>
+
+<title>Registration Form</title>
+<script type="text/javascript">
+function validate() {
+  var name = document.myform.Name.value;
+  var email = document.myform.email.value;
+  var mob = document.myform.mob.value;
+  atpos = email.indexOf("@");
+  dotpos = email.lastIndexOf(".");
+
+  if (name == '') {
+    alert("Please provide your name");
+    document.myform.Name.focus(); 
+    return false;
+  }
+
+  if (mob == ''||isNaN(mob)) {
+    alert("Please provide your mobile");
+    document.myform.mob.focus(); 
+    return false;
+  }
+
+  if (atpos < 1 || dotpos - atpos < 2) {
+    alert("Please provide your correct Email Id");
+    document.myform.email.focus();
+    return false;
+  }
+  return true;
+}
+
+</script>
+ 
+        <style>
+             body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        div {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid grey;
+        }
+        </style>
+</head>
+<body>
+        <div>
+        <form name="myform" >
+            <div style="width:40%;border:none">
+            <h1 text-align="center">Admission Form</h1>
+            </div>  
+            
+            <h2 text-align="left">Personal Information</h2>
+            
+            <table>
+                <tr>
+                   <td> Name:  </td>
+                    <td><input type="text"name="Name"></td>
+                </tr>
+                 <tr>
+                   <td> Phone:</td>
+                
+                    <td><input type="text" maxlength="10" pattern="[0-9]{10}" name="mob"><br></td>
+                </tr>
+                 <tr>
+                   <td>Email:</td>
+                
+                    <td><input type="text"name="email"><br></td>
+                </tr>
+                <tr aria-colspan="2">
+                    <td><center><input type="submit" name="Submit" onclick=validate() value="Submit"></center></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </body>
+</html>

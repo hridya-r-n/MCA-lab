@@ -1,0 +1,97 @@
+<!-- Prepare a Registration form to fill the following data for taking admission for any of the courses offered. [Courses - BA,B.Sc,BCA]
+ Personal Information - Name ,Gender, DOB, Address, Phone , Guardian, Hobbies and extra curricular activities.    [use  checkbox,Radio button,TextArea, Table...]
+ Office Use .....Provide proper division to increase the aesthetic view-->
+ <html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+             body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        div {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid grey;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+        <form>
+            <div style="width:40%;border:none">
+            <h1 text-align="center">Admission Form</h1>
+            </div>  
+            
+            <h2 text-align="left">Personal Information</h2>
+            
+            <table>
+                <tr>
+                   <td> Name:  </td>
+                    <td><input type="text"name="Name"></td>
+                </tr>
+                <tr>
+                   <td> Gender:</td>
+                    <td>
+                        <br><input type="radio" name="gender">
+                        <label for="female">Female</label><br>
+                        <input type="radio" name="gender">
+                        <label for="male">Male</label><br>
+                        <input type="radio" name="gender">
+                        <label for="other">Others</label><br>
+                    </td>
+                </tr>
+                 <tr>
+                   <td> Date of Birth:</td>
+                
+                    <td><input type="date" name="Dob" max="2006-12-31"><br></td>
+                </tr>
+                 <tr>
+                   <td> Address:</td>
+                    <td><textarea name="address" ></textarea><br></td>
+                </tr>
+                 <tr>
+                   <td> Phone:</td>
+                
+                    <td><input type="text" maxlength="10" pattern="[0-9]" name="mob"><br></td>
+                </tr>
+                 <tr>
+                   <td> Gaurdian Name:</td>
+                
+                    <td><input type="text"name="Gaurdian"><br></td>
+                </tr>
+                <tr>
+                   <td> Course:</td>
+               
+                    <td>
+                        <br><br>
+                        <input type="radio" name="course">
+                        <label for="ba">BA</label><br>
+                        <input type="radio" name="course">
+                        <label for="bsc">BSc</label><br>
+                        <input type="radio" name="course">
+                        <label for="bca">BCA</label>
+                    </td>
+                </tr>
+                 <tr>
+                   <td> Hobbies and Activities:</td>
+                    <td>
+                        <br><br>
+                        <input type="checkbox" id="sports" name="activities" value="Sports">
+                        <label for="sports">Sports</label><br>
+                        <input type="checkbox" id="music" name="activities" value="Music">
+                        <label for="music">Music</label><br>
+                        <input type="checkbox" id="arts" name="activities" value="Arts">
+                        <label for="arts">Arts</label><br>
+                    </td>
+                </tr>
+                <tr aria-colspan="2">
+                    <td><center><input type="submit" name="Submit" value="Submit"></center></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </body>
+ </html>

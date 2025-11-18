@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            align-items: center;
+            font-size: large;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .box {
+            border: 1px solid grey;
+            border-radius: 10px;
+            background: rgb(255, 255, 255);
+            height: fit-content;
+            max-width: 700px;
+            float: center;
+            padding:50px;
+            margin:auto;
+        }
+        tr{
+            height: 30px;
+            width: 30px;
+            text-justify: auto;
+        }
+    </style>
+    <title>Practice</title>
+</head>
+
+<body>
+   
+        <form>
+            <div class="box">
+                <div style="border:none;">
+                    <center><h1>Registration Form</h1></center>
+                </div>
+                <hr>
+                <div>
+                    <h2 style="text-align:left">Personal Details</h2>
+                </div>
+                <table style="align-items: left;">
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" name="gender">
+                            <label name="male">Male</label>
+                            <br>
+                            <input type="radio" name="gender">
+                            <label name="female">Female</label>
+                            <br>
+                            <input type="radio" name="gender">
+                            <label name="others">Others</label>
+                        </td>
+                    </tr>
+                       <tr></tr>
+                    <tr>
+                        <td>Mobile No.:</td>
+                        <td><input type="text" name="mob"></td>
+                    </tr>
+                       <tr></tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                       <tr></tr>
+                    <tr>
+                        <td colspan="2"><center><input type="button" name="Submit" value="Submit"></center></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+
+</body>
+
+
+</html>
