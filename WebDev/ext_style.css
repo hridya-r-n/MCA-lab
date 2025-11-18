@@ -1,0 +1,10 @@
+.div{
+    border:4px,solid,mediumpurple;
+    border-radius:10px;
+    text-align: center;
+    color:darkred;
+    background-color:cornflowerblue;
+    width: fit-content;
+    height: 100px;
+    padding: 30px;
+}
