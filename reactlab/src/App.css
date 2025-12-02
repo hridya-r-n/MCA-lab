@@ -1,10 +1,10 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
+} */
+/* 
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -30,8 +30,12 @@
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
-  }
-}
+  } */
+/* } */
+/* body, html {
+    margin: 0;      
+    padding: 0;
+} */
 .res{
   display: 'flex';
   gap: '35px';
@@ -39,8 +43,16 @@
 }
 .card {
   padding: 2em;
+  position: absolute; 
+  top: 0;
+  left:0;
 }
-
+.nav-bar{
+  width: 100%;
+  background-color: #161515; 
+  border-bottom: 1px solid #646cffaa; 
+  padding: 15px 30px;
+}
 .read-the-docs {
   color: #888;
 }
