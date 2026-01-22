@@ -1,0 +1,3 @@
+# Ignore Java JDK
+Java/jdk-25.0.2/
+Java/jdk-*/
