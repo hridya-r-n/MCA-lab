@@ -1,0 +1,14 @@
+7Jin, Weina, et al. "Invisible users: Uncovering end-users' requirements for explainable ai via explanation forms and goals." arXiv preprint arXiv:2302.06609 (2023).
+8 Krause, J., Dasgupta, A., Swartz, J., Aphinyanaphongs, Y., & Bertini, E. (2017, October). A workflow for visual diagnostics of binary classifiers using instance-level explanations. In 2017 IEEE Conference on Visual Analytics Science and Technology (VAST) (pp. 162-172). IEEE.
+
+11Guidotti, Riccardo. "Counterfactual explanations and how to find them: literature review and benchmarking." Data Mining and Knowledge Discovery 38.5 (2024): 2770-2824.
+
+Hoffman, Robert R., et al. "Metrics for explainable AI: Challenges and prospects." arXiv preprint arXiv:1812.04608 (2018).
+
+Guidotti, Riccardo, et al. "Local rule-based explanations of black box decision systems." arXiv preprint arXiv:1805.10820 (2018).
+
+14Gaspar, Diogo, Paulo Silva, and Catarina Silva. "Explainable AI for Intrusion Detection Systems: LIME and SHAP Applicability on Multi-Layer Perceptron." IEEE Access (2024).
+
+Bennett Moses, Lyria, and Janet Chan. "Algorithmic prediction in policing: assumptions, evaluation, and accountability." Policing and society 28.7 (2018): 806-822.
+
+"why should i trust you?"explaining the predictions of any classifier
