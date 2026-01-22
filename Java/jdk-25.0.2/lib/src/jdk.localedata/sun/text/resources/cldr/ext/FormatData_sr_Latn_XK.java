@@ -1,0 +1,116 @@
+/*
+ * Copyright (c) 2012, 2025, Oracle and/or its affiliates. All rights reserved.
+ * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ */
+
+/*
+ * COPYRIGHT AND PERMISSION NOTICE
+ *
+ * Copyright (c) 1991-2022 Unicode, Inc. All rights reserved.
+ * Distributed under the Terms of Use in https://www.unicode.org/copyright.html.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining
+ * a copy of the Unicode data files and any associated documentation
+ * (the "Data Files") or Unicode software and any associated documentation
+ * (the "Software") to deal in the Data Files or Software
+ * without restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, and/or sell copies of
+ * the Data Files or Software, and to permit persons to whom the Data Files
+ * or Software are furnished to do so, provided that either
+ * (a) this copyright and permission notice appear with all copies
+ * of the Data Files or Software, or
+ * (b) this copyright and permission notice appear in associated
+ * Documentation.
+ *
+ * THE DATA FILES AND SOFTWARE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF
+ * ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+ * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+ * IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS
+ * NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL
+ * DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+ * DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ * TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ * PERFORMANCE OF THE DATA FILES OR SOFTWARE.
+ *
+ * Except as contained in this notice, the name of a copyright holder
+ * shall not be used in advertising or otherwise to promote the sale,
+ * use or other dealings in these Data Files or Software without prior
+ * written authorization of the copyright holder.
+ */
+
+package sun.text.resources.cldr.ext;
+
+import java.util.ListResourceBundle;
+
+public class FormatData_sr_Latn_XK extends ListResourceBundle {
+    @Override
+    protected final Object[][] getContents() {
+        final String[] metaValue_MonthAbbreviations = new String[] {
+            "jan",
+            "feb",
+            "mart",
+            "apr",
+            "maj",
+            "jun",
+            "jul",
+            "avg",
+            "sept",
+            "okt",
+            "nov",
+            "dec",
+            "",
+        };
+        final String[] metaValue_generic_abbreviated_AmPmMarkers = new String[] {
+            "AM",
+            "PM",
+            "pono\u0107",
+            "podne",
+            "jutro",
+            "",
+            "po pod.",
+            "",
+            "uve\u010de",
+            "",
+            "no\u0107u",
+            "",
+        };
+        final String[] metaValue_generic_narrow_AmPmMarkers = new String[] {
+            "AM",
+            "PM",
+            "pono\u0107",
+            "podne",
+            "jutro",
+            "",
+            "po pod.",
+            "",
+            "ve\u010de",
+            "",
+            "no\u0107",
+            "",
+        };
+        final Object[][] data = new Object[][] {
+            { "generic.narrow.AmPmMarkers", metaValue_generic_narrow_AmPmMarkers },
+            { "generic.abbreviated.AmPmMarkers", metaValue_generic_abbreviated_AmPmMarkers },
+            { "MonthAbbreviations", metaValue_MonthAbbreviations },
+            { "standalone.MonthAbbreviations", metaValue_MonthAbbreviations },
+            { "AmPmMarkers", metaValue_generic_abbreviated_AmPmMarkers },
+            { "narrow.AmPmMarkers", metaValue_generic_narrow_AmPmMarkers },
+            { "abbreviated.AmPmMarkers", metaValue_generic_abbreviated_AmPmMarkers },
+            { "buddhist.MonthAbbreviations", metaValue_MonthAbbreviations },
+            { "buddhist.AmPmMarkers", metaValue_generic_abbreviated_AmPmMarkers },
+            { "buddhist.narrow.AmPmMarkers", metaValue_generic_narrow_AmPmMarkers },
+            { "buddhist.abbreviated.AmPmMarkers", metaValue_generic_abbreviated_AmPmMarkers },
+            { "japanese.MonthAbbreviations", metaValue_MonthAbbreviations },
+            { "japanese.AmPmMarkers", metaValue_generic_abbreviated_AmPmMarkers },
+            { "japanese.narrow.AmPmMarkers", metaValue_generic_narrow_AmPmMarkers },
+            { "japanese.abbreviated.AmPmMarkers", metaValue_generic_abbreviated_AmPmMarkers },
+            { "roc.MonthAbbreviations", metaValue_MonthAbbreviations },
+            { "roc.narrow.AmPmMarkers", metaValue_generic_narrow_AmPmMarkers },
+            { "roc.abbreviated.AmPmMarkers", metaValue_generic_abbreviated_AmPmMarkers },
+            { "islamic.narrow.AmPmMarkers", metaValue_generic_narrow_AmPmMarkers },
+            { "islamic.abbreviated.AmPmMarkers", metaValue_generic_abbreviated_AmPmMarkers },
+        };
+        return data;
+    }
+}
