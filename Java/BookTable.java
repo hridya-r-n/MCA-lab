@@ -71,7 +71,7 @@ public class BookTable {
                         break;
                     case 3:
                         System.out.println("Enter a book title:");
-                        String title=sc.next();
+                        String title=sc.nextLine();
                         SelectB.setString(1,title);
                         ResultSet rt=SelectB.executeQuery();
                         while(rt.next()){
