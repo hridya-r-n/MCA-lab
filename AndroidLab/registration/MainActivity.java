@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             gen = "Female";
         }
-        Intent intent=new Intent(MainActivity.this,ProfileActivity.class);
+        Intent intent=new Intent(MainActivity.this,DisplayActivity.class);
         intent.putExtra("name",name);
         intent.putExtra("email",em);
         intent.putExtra("password",pwd);
